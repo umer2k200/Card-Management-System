@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Manaagement System</title>
+    <link rel="stylesheet" href="deletecard.css">
+</head>
+<body>
+    <header>
+        <h1>Card Management System</h1>
+        <button class="header_buttons" onclick="window.location.href='home.html'"><b>Home</b></button>
+        <button class="header_buttons" onclick="window.location.href='addcard.html'"><b>Add</b></button>
+        <button class="header_buttons" onclick="window.location.href='updatecard.html'"><b>Update</b></button>
+        <button class="header_buttons" onclick="window.location.href='searchfiltercard.html'"><b>Search</b></button>
+        <button class="header_buttons" id="home" onclick="window.location.href='deletecard.html'"><b>Delete</b></button>
+      </header>
+      <div class="main-content">
+        <h2>Delete Card</h2>
+        <hr><br>
+        <form action="" method="get" id="searchForm">
+            <label for="filter">Card Name </label>
+            <input type="text" name="search" id="search" placeholder="Enter card name here">
+            <button class="header_buttons" type="submit" name="submit" id="submit">Delete</button>
+        </form><br><br><br><hr>
+        <h2>Delete all Cards</h2>
+        <hr><br><br>
+        <button class="header_buttons2" type="submit" name="submit2" id="submit2">Delete All Cards</button>
+        <br><br><br><br>
+        <hr>
+      </div>
+      <footer>
+        <p>&copy; 2024 Card Management System</p>
+        <div class="footericons">
+          <a href="https://www.instagram.com/umar._xxi?igsh=MWdiNWUxanh6NXUxNw==" target="_blank">
+            <img id="in" src="pics/instagram.png" alt="Instagram" width="45px">
+          </a>
+          <a href="https://m.facebook.com/profile.php/?id=100068265579413&name=STSDirectNavUserDecorator" target="_blank">
+            <img  id="fb" src="pics/facebook.png" alt="Facebook" width="40px">
+          </a>
+        </div>
+      </footer>
+    <script src="deletecard.js"></script>
+</body>
+</html>

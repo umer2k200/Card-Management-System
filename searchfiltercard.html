@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Manaagement System</title>
+    <link rel="stylesheet" href="searchfiltercard.css">
+</head>
+<body>
+    <header>
+        <h1>Card Management System</h1>
+        <button class="header_buttons" onclick="window.location.href='home.html'"><b>Home</b></button>
+        <button class="header_buttons" onclick="window.location.href='addcard.html'"><b>Add</b></button>
+        <button class="header_buttons" onclick="window.location.href='updatecard.html'"><b>Update</b></button>
+        <button class="header_buttons" id="home" onclick="window.location.href='searchfiltercard.html'"><b>Search</b></button>
+        <button class="header_buttons" onclick="window.location.href='deletecard.html'"><b>Delete</b></button>
+      </header>
+      <div class="main-content">
+        <h2>Search and Filter Cards</h2>
+        <hr><br>
+        <form action="" method="get" id="searchForm">
+            <label for="filter">Filter by:</label>
+            <select name="filter" id="filter">
+                <option value="cardname">Card Name</option>
+                <option value="date">Date</option>
+                <option value="time">Time</option>
+                <option value="event">Event Name</option>
+                <option value="nearestplace">Nearest Place</option>
+            </select><br>
+            <input type="text" name="search" id="search" placeholder="Enter here">
+            <button class="header_buttons" type="submit" name="submit" id="submit">Search</button>
+        </form><br><br><br><br>
+        <div id="searchResults">
+            <!-- Search results will be displayed here -->
+        </div><br><br><br><br><br><br>
+        <hr>
+      </div>
+      <footer>
+        <p>&copy; 2024 Card Management System</p>
+        <div class="footericons">
+          <a href="https://www.instagram.com/umar._xxi?igsh=MWdiNWUxanh6NXUxNw==" target="_blank">
+            <img id="in" src="pics/instagram.png" alt="Instagram" width="45px">
+          </a>
+          <a href="https://m.facebook.com/profile.php/?id=100068265579413&name=STSDirectNavUserDecorator" target="_blank">
+            <img  id="fb" src="pics/facebook.png" alt="Facebook" width="40px">
+          </a>
+        </div>
+      </footer>
+    <script src="searchfiltercard.js"></script>
+</body>
+</html>

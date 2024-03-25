@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Manaagement System</title>
+    <link rel="stylesheet" href="updatecard.css">
+</head>
+<body>
+    <header>
+        <h1>Card Management System</h1>
+        <button class="header_buttons" onclick="window.location.href='home.html'"><b>Home</b></button>
+        <button class="header_buttons" onclick="window.location.href='addcard.html'"><b>Add</b></button>
+        <button class="header_buttons" id="home" onclick="window.location.href='updatecard.html'"><b>Update</b></button>
+        <button class="header_buttons" onclick="window.location.href='searchfiltercard.html'"><b>Search</b></button>
+        <button class="header_buttons" onclick="window.location.href='deletecard.html'"><b>Delete</b></button>
+      </header>
+      <div class="main-content">
+        <h2>Update Card</h2>
+        <hr><br>
+        <!-- update section-->
+        <form align="center" action="" method="post" id="updateForm">
+          <label for="cardnamee">Card Name</label><br>
+          <input type="text" name="cardname" id="cardname" placeholder="Card Name" required><br><br>
+          <label for="carddesc">Card Description</label><br>
+          <input type="text" name="carddescription" id="carddesc" placeholder="Card Description" required><br><br>
+          <label for="date">Date</label><br>
+          <input type="date" name="currentdate" id="currentdate" placeholder="Date" required><br><br>
+          <label for="time">Time</label><br>
+          <input type="time" name="currenttime" id="currenttime" placeholder="Time" required><br><br>
+          <label for="nearestplace">Nearest Place</label><br>
+          <input type="text" name="nearestplace" id="nearestplace" placeholder="Nearest Place" required><br><br>
+          <label for="eventname">Event Name</label><br>
+          <input type="text" name="eventname" id="eventname" placeholder="Event Name" required><br><br>
+          <label for="image">Image (Optional) </label>
+          <input type="file" name="imageInput" id="imageInput" accept="image/*"><br><br>
+          <hr>
+          <input class="header_buttons" type="submit" name="submit" value="Update Card">
+        </form>
+        <!-- -->
+        <br>
+      </div>
+      <footer>
+        <p>&copy; 2024 Card Management System</p>
+        <div class="footericons">
+          <a href="https://www.instagram.com/umar._xxi?igsh=MWdiNWUxanh6NXUxNw==" target="_blank">
+            <img id="in" src="pics/instagram.png" alt="Instagram" width="45px">
+          </a>
+          <a href="https://m.facebook.com/profile.php/?id=100068265579413&name=STSDirectNavUserDecorator" target="_blank">
+            <img  id="fb" src="pics/facebook.png" alt="Facebook" width="40px">
+          </a>
+        </div>
+      </footer>
+    <script src="updatecard.js"></script>
+</body>
+</html>
